@@ -1,3 +1,31 @@
+## Introduction
+  - This solo project created a flash card simulation through the command line. The user answers questions and a score is counted.
+  - The final score can be viewed at the end of a round.
+
+## Technologies
+  - Javascript
+  - Mocha/Chai
+
+## Illustrations
+//GIF goes here
+
+## Setup Instructions
+1. Fork this repo  
+2. Clone the repo to your local machine
+3. View the project in the browser by running open index.html in your terminal.
+
+## Contributors
+  - [[Abby Luce](https://github.com/abbyluce)]
+
+
+## Project Specs
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/flash-cards.html)
+
+
+-------------------
+
+
+
 # FlashCards Starter Kit
 
 ## Fork This Repo
@@ -20,7 +48,7 @@ npm install
 
 To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
 
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
+Running `node index.js` from the root of your project should result in the following message being displayed in your terminal:
 
 ```bash
 Your project is running...
@@ -67,5 +95,3 @@ npm test
 ```
 
 The test results will output to the terminal.
-
-
