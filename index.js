@@ -1,3 +1,7 @@
-// This is where your project starts.
+const Game = require('../src/Game');
+const data = require('../src/data');
 
-console.log('Your project is running...'); 
+const newGame = new Game(data)
+newGame.start();
+
+console.log('Your project is running...');
