@@ -15,7 +15,7 @@
 ## Setup Instructions
 1. Fork this repo  
 2. Clone the repo to your local machine
-3. Test your knowledge by running node index.html in your terminal.
+3. Test your knowledge by running node index.js in your terminal.
 
 ## Contributors
   - [[Abby Luce](https://github.com/abbyluce)]
