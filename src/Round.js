@@ -21,17 +21,16 @@ class Round {
       this.correctGuesses.push(this.returnCurrentCard())
     };
     this.turns++;
-    if (this.turns === this.deck.cards.length) {
-      this.endRound();
-    };
     return turn.giveFeedback()
   };
 
   calculatePercentCorrect() {
-    return (this.correctGuesses.length / this.turns) * 100;
+    let percentCorrect = (this.correctGuesses.length / this.turns) * 100;
+    return percentCorrect.toFixed(2)
   };
 
   endRound() {
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
     return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   };
 };
