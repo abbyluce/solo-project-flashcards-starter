@@ -2,26 +2,10 @@ const chai = require('chai');
 const expect = chai.expect;
 
 const Game = require('../src/Game');
-const Round = require('../src/Round');
-const Deck = require('../src/Deck');
-const Card = require('../src/Card');
-const Turn = require('../src/Turn');
 
 describe('Game', function() {
-
-  it('should be a function', function() {
-    const game = new Game();
-
-    expect(Game).to.be.a('function');
-  });
-
-  it('should be an instance of Game', function() {
-    const game = new Game();
-
-    expect(game).to.be.an.instanceof(Game);
-  });
-
-  it('should create a deck of cards and a round', function() {
+  let game = new Game();
+  beforeEach(() => {
     const mockData = [{
       "id": 1,
       "question": "What is Abby\'s favorite food?",
@@ -42,14 +26,22 @@ describe('Game', function() {
       "question": "What is Abby\'s spirit animal?",
       "answers": ['Sloth', 'Dog', 'Cow'],
       "correctAnswer": 'Sloth'
-    }]
+    }];
+    let game = new Game(mockData);
+  });
 
-    const game = new Game(mockData);
+  it('should be a function', function() {
+    expect(Game).to.be.a('function');
+  });
 
+  it('should be an instance of Game', function() {
+    expect(game).to.be.an.instanceof(Game);
+  });
+
+  it('should create a deck of cards and a round', function() {
     game.createCards();
     game.createDeck();
     game.createRound();
-
     expect(game.deck).to.not.equal(null);
     expect(game.currentRound).to.not.equal(null);
   });

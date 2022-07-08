@@ -1,7 +1,6 @@
-const Game = require('../src/Game');
-const data = require('../src/data');
+const Game = require('./src/Game');
 
-const newGame = new Game(data)
+const newGame = new Game();
 newGame.start();
 
 console.log('Your project is running...');
